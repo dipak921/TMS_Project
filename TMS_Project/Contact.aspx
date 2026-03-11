@@ -1,5 +1,25 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/TMS_Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="TMS_Project.Contact" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+<script type="text/javascript">
+    function SuccessConteact()
+    {
+        Swal.fire({
+            title: "Success",
+            text: "Form has been Submitted Successfully",
+            icon: "success"
+        });
+    }
+
+    function ErrorConteact() {
+        Swal.fire({
+            title: "Failur",
+            text: "Form Insertion Faild",
+            icon: "error"
+        });
+    }
+
+
+</script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
@@ -53,7 +73,6 @@
           </div>
 
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="form-row">
                 <div class="col-md-6 form-group">
 <%--                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />--%>
@@ -99,7 +118,7 @@
                   <asp:Button Class="btn btn-info" ID="SubmitButton" runat="server" Text="Submit" OnClick="SubmitButton_Click"/>
                 
               </div>
-            </form>
+        
           </div>
 
         </div>
