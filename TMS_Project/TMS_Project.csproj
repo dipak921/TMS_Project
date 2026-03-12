@@ -69,6 +69,8 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="admin\Admin_Index.aspx" />
+    <Content Include="admin\Admin_Login.aspx" />
+    <Content Include="admin\Admin_Logout.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="dist\sweetalert2.all.js" />
@@ -104,6 +106,20 @@
     </Compile>
     <Compile Include="admin\Admin_Index.aspx.designer.cs">
       <DependentUpon>Admin_Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Admin_Login.aspx.cs">
+      <DependentUpon>Admin_Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Admin_Login.aspx.designer.cs">
+      <DependentUpon>Admin_Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Admin_Logout.aspx.cs">
+      <DependentUpon>Admin_Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Admin_Logout.aspx.designer.cs">
+      <DependentUpon>Admin_Logout.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>

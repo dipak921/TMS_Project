@@ -7,12 +7,15 @@ using System.Web.UI.WebControls;
 
 namespace TMS_Project.admin
 {
-    public partial class Admin_Index : System.Web.UI.Page
+    public partial class Admin_Logout : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["admin_username"] == null)
+            if (Session["admin_username"] != null)
             {
+                Session.Abandon();
+                // second way to distroy session
+                //Session["admin_username"] = null;
                 Response.Redirect("Admin_Login.aspx");
             }
         }
