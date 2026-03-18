@@ -87,6 +87,7 @@
     <Content Include="student\Student_Logout.aspx" />
     <Content Include="Student_Login.aspx" />
     <Content Include="Student_Signup.aspx" />
+    <Content Include="Tutor_Signup.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -181,6 +182,13 @@
     </Compile>
     <Compile Include="TMS_Site.Master.designer.cs">
       <DependentUpon>TMS_Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Tutor_Signup.aspx.cs">
+      <DependentUpon>Tutor_Signup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tutor_Signup.aspx.designer.cs">
+      <DependentUpon>Tutor_Signup.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

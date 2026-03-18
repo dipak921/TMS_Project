@@ -129,10 +129,17 @@
 
         <div class="row">
             <div class="col-md-6 mx-auto">
-                <asp:Button ID="StudentSignUpButton" OnClick="StudentSignUpButton_Click" runat="server" Text="SignUp" CssClass="btn bg-primary btn-block" />
+                <asp:Button ID="StudentSignUpButton" OnClick="StudentSignUpButton_Click" runat="server" Text="SignUp" CssClass="btn bg-primary btn-block" />       
             </div>
-            
         </div>
+        <br />
+        <div class="row">
+            <div class="col-md-6 mx-auto text-center">
+             <a href="Student_Signup.aspx" class="btn btn-success">SignUp as Student </a>
+             <a href="Tutor_Signup.aspx" class="btn btn-info">SignUp as Tutor </a>            
+        </div>
+            </div>
+
         <br />
         </div>
 
