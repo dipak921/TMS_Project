@@ -87,6 +87,9 @@
     <Content Include="student\Student_Logout.aspx" />
     <Content Include="Student_Login.aspx" />
     <Content Include="Student_Signup.aspx" />
+    <Content Include="Tutor\Tutor_Index.aspx" />
+    <Content Include="Tutor\Tutor_Logout.aspx" />
+    <Content Include="Tutor_Login.aspx" />
     <Content Include="Tutor_Signup.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -183,6 +186,34 @@
     <Compile Include="TMS_Site.Master.designer.cs">
       <DependentUpon>TMS_Site.Master</DependentUpon>
     </Compile>
+    <Compile Include="Tutor\Tutor_Dashborad.Master.cs">
+      <DependentUpon>Tutor_Dashborad.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tutor\Tutor_Dashborad.Master.designer.cs">
+      <DependentUpon>Tutor_Dashborad.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Tutor\Tutor_Index.aspx.cs">
+      <DependentUpon>Tutor_Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tutor\Tutor_Index.aspx.designer.cs">
+      <DependentUpon>Tutor_Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tutor\Tutor_Logout.aspx.cs">
+      <DependentUpon>Tutor_Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tutor\Tutor_Logout.aspx.designer.cs">
+      <DependentUpon>Tutor_Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tutor_Login.aspx.cs">
+      <DependentUpon>Tutor_Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tutor_Login.aspx.designer.cs">
+      <DependentUpon>Tutor_Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Tutor_Signup.aspx.cs">
       <DependentUpon>Tutor_Signup.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -196,6 +227,7 @@
     <None Include="packages.config" />
     <Content Include="TMS_Site.Master" />
     <Content Include="student\Student_Dashboard.Master" />
+    <Content Include="Tutor\Tutor_Dashborad.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
