@@ -37,5 +37,26 @@ namespace TMS_Project.student
             Repeater1.DataSource = data;
             Repeater1.DataBind();
         }
+
+        protected void SearchBtn_ServerClick(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection(cs);
+            string query = "select * from tutor_signup where([name] like('%"+SearchText.Text+ "%') or [gender] like('%"+SearchText.Text+"%') or [country] like('%"+SearchText.Text+"%') or[city] like ('%"+SearchText.Text+"%') or[qualification] like ('%"+SearchText.Text+"%') or[experience] like('%"+SearchText.Text+"%'))";
+            SqlDataAdapter sda = new SqlDataAdapter(query, con);
+            DataTable data = new DataTable();
+            sda.Fill(data);
+            if(data.Rows.Count > 0)
+            {
+                Repeater1.DataSource = data;
+                Repeater1.DataBind();
+            }
+            else
+            {
+                Response.Write("<script>alert('No Record Found')</script>");
+                Repeater1.DataSource = null;
+                Repeater1.DataBind();
+            }
+
+        }
     }
 }
